@@ -24,6 +24,8 @@ if ($GET_["answer"]) == $answers[2] {
 			?>
 	</div>
 
+	<hr> </hr>
+
 <div> Your current score is <?php echo $current_score ?> out of <?php echo $current_question ?> </div>
 
 	<div class="question1">
