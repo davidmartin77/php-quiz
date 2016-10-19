@@ -1,14 +1,13 @@
 <?php
-$quiz = array(
-	3 => "C"
-	);
-$current_question=3;
+include 'quiz.php'
 
-include 'quiz.php';
-    $current_score = 0;
-    if ($_GET["answer"] == $answers[0]) {
-        $current_score += 1;
-    }
+$current_score= $_GET["current_score"];
+
+if ($GET_["answer"]) == $answers[3] {
+	$current_score += 1;
+
+}
+
 ?>
 
 <!DOCTYPE html>

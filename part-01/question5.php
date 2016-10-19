@@ -1,9 +1,13 @@
 <?php
-$quiz = array(
-	0=> "A"
-	);
-$current_question=0;
-$current_score=0;
+include 'quiz.php'
+
+$current_score= $_GET["current_score"];
+
+if ($GET_["answer"]) == $answers[4] {
+	$current_score += 1;
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +22,10 @@ $current_score=0;
 			<?php 
 			count($quiz);
 			?>
-	
-	</div>
+	</div>		
 
 	<div class="question5">
-	<p> Question 5: What is your favorite conversation topic </p>
+	<p> Question 5: What is your favorite conversation topic? </p>
 	<form action=result.php>
 	<input type="radio" name="answer" value="A" checked> Fashion <br>
 	<input type="radio" name="answer" value="B" checked> Football <br>
@@ -38,6 +41,7 @@ $current_score=0;
 	 <input type="submit" value="RESULTS">
 	 </form> 
 	</div>
+
 
 </body>
 </html>

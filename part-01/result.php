@@ -1,6 +1,6 @@
 <?php
 
-	include 'quiz.php'
+	include 'quiz.php';
 
 	$current_score = $_GET["current_score"]
 
@@ -18,7 +18,15 @@ if ($_GET["answer"] == $answers[$_GET["current_question"]]) {
 
 <body>
 
-<div> You've finished the quiz. Your score is <?php echo $current_score ?> out of 4 </div>
+<div class = "final result"> 
+	You've finished the quiz. Your score is <?php echo $current_score ?> out of 5 </div>
+
+	<?php } else { ?>
+
+		<div class="answer">
+			<?php echo $quiz[$current_question]; ?>
+
+			
 
 </body>
 </html>

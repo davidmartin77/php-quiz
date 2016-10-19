@@ -1,9 +1,14 @@
 <?php
-$quiz = array(
-	0=> "D"
-	);
-$current_question=0;
+include 'quiz.php'
+
 $current_score=0;
+$current_score= $_GET["current_score"];
+
+if ($GET_["answer"]) == $answers[0] {
+	$current_score += 1;
+
+}
+
 ?>
 
 <!DOCTYPE html>
