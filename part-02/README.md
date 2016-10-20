@@ -10,4 +10,16 @@ Edit this file directly to add your response below:
 
 ---
 
-<!-- Your response goes here. -->
+To add a question:
+
+Update quiz.php to add question under the $quiz array.
+
+Update quiz.php to add the correct response to the $answers array.
+
+Create a new file in sublime text
+
+Copy the php instructions to check the answer to the latest question and update the $current_score if the answer is correct (or keep the $current_score if the answer is incorrect).
+
+Copy the template for the answers. 
+
+Write out the possible answers, with the correct response corresponding to the choice in quiz.php 

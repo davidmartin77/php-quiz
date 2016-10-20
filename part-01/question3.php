@@ -14,7 +14,7 @@ if ($GET_["answer"]) == $answers[2] {
 <html>
 <head>
 </head>
-
+hello
 <body>
 
 	<div class="question-count">
