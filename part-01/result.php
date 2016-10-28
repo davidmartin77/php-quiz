@@ -1,14 +1,19 @@
 <?php
 
-	include 'quiz.php';
+$current_score = $_GET["current_score"];
 
-	$current_score = $_GET["current_score"]
+if ($GET_["answer"] == $answers[3]) {
+	$current_score += 1;
+}
 
-if ($_GET["answer"] == $answers[$_GET["current_question"]]) {
-	$current_score +=1
-	}
+	$current_score == $final_score;
+//	$_GET[$current_score];
+//	"results" = $current_score 
+	//if ($_GET["answer"] == $answers[$_GET]"current_question"]) {
+	//$current_score +=1
+	//}
 
-	echo $current_score
+	//echo $current_score
 ?>	
 
 <!DOCTYPE html>
@@ -19,12 +24,11 @@ if ($_GET["answer"] == $answers[$_GET["current_question"]]) {
 <body>
 
 <div class = "final result"> 
-	You've finished the quiz. Your score is <?php echo $current_score ?> out of 5 </div>
+	You've finished the quiz. Your score is <?php 
+		echo $final_score; 
+	?> out of 5 </div>
 
-	<?php } else { ?>
-
-		<div class="answer">
-			<?php echo $quiz[$current_question]; ?>
+	
 
 			
 

@@ -1,12 +1,14 @@
 <?php
 include 'quiz.php';
 
-$current_score= $_GET["current_score"];
 
-if ($GET_["answer"] == $answers[4]) {
+$current_score = $_GET["current_score"];
+
+if ($_GET["answer"] == $answers[1]) {
 	$current_score += 1;
-
 }
+
+$current_question += 1; 
 
 ?>
 
@@ -22,15 +24,19 @@ if ($GET_["answer"] == $answers[4]) {
 			<?php 
 			count($quiz);
 			?>
-	</div>		
+	</div>
+
+<div> Your score is <?php echo "$current_score"; ?> out of <?php echo "$current_question"; ?>
+
+	</div> 	
 
 	<div class="question5">
-	<p> Question 5: What is your favorite conversation topic? </p>
-	<form action=result.php>
-	<input type="radio" name="answer" value="A" checked> Fashion <br>
-	<input type="radio" name="answer" value="B" checked> Football <br>
-	<input type="radio" name="answer" value="C" checked> Craft Beer <br>
-	<input type="radio" name="answer" value="D" checked> Finance <br>
+		<?php echo $quiz[0] ?>
+	<form action="result.php">
+	<input type="radio" name="answer" value="A"> Fashion <br>
+	<input type="radio" name="answer" value="B" > Football <br>
+	<input type="radio" name="answer" value="C" > Craft Beer <br>
+	<input type="radio" name="answer" value="D"> Finance <br>
 	<input type="hidden" name="current_question value=<?php echo $current_question; ?>">
 	<input type="hidden" name="current_score value=<?php echo $current_score; ?>">
 	</form>	

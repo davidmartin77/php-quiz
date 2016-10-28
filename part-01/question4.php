@@ -1,12 +1,14 @@
 <?php
 include 'quiz.php';
 
-$current_score= $_GET["current_score"];
 
-if ($GET_["answer"] == $answers[3]) {
+$current_score = $_GET["current_score"];
+
+if ($_GET["answer"] == $answers[1]) {
 	$current_score += 1;
-
 }
+
+$current_question += 1; 
 
 ?>
 
@@ -24,15 +26,19 @@ if ($GET_["answer"] == $answers[3]) {
 			?>
 	</div>
 
-<div> Your current score is <?php echo $current_score ?> out of <?php echo $current_question ?> </div>
+<div> Your score is <?php echo "$current_score"; ?> out of <?php echo "$current_question"; ?>
+
+
+	</div> 
+
 
 	<div class="question1">
-	<p> Question 4: What is your favorite mode of transportation </p>
-	<form action=result.php>
-	<input type="radio" name="answer" value="A" checked> Car <br>
-	<input type="radio" name="answer" value="B" checked> Walking <br>
-	<input type="radio" name="answer" value="C" checked> Longboard <br>
-	<input type="radio" name="answer" value="D" checked> Bicycle <br>
+		<?php echo $quiz[3] ?>
+	<form action="question5.php">
+	<input type="radio" name="answer" value="A" > Car <br>
+	<input type="radio" name="answer" value="B" > Walking <br>
+	<input type="radio" name="answer" value="C"> Longboard <br>
+	<input type="radio" name="answer" value="D"> Bicycle <br>
 	<input type="hidden" name="current_question value=<?php echo $current_question; ?>">
 	<input type="hidden" name="current_score value=<?php echo $current_score; ?>">
 	</form>
