@@ -1,12 +1,11 @@
 <?php
-include 'quiz.php'
+include 'quiz.php';
 
-$current_score=0;
-$current_score= $_GET["current_score"];
+$current_score = 0;
+$current_score = $_GET["current_score"];
 
-if ($GET_["answer"]) == $answers[0] {
+if ($GET_["answer"] == $answers[0]) {
 	$current_score += 1;
-
 }
 
 ?>

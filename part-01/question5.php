@@ -1,9 +1,9 @@
 <?php
-include 'quiz.php'
+include 'quiz.php';
 
 $current_score= $_GET["current_score"];
 
-if ($GET_["answer"]) == $answers[4] {
+if ($GET_["answer"] == $answers[4]) {
 	$current_score += 1;
 
 }
